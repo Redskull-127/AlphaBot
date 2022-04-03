@@ -1,0 +1,88 @@
+.body{
+    background-color: black;
+    /* background-image: '/assets/alpha.jpeg'; */
+    /* background: center repeat url("/assets/vid.mp4"); */
+    justify-content: center;
+    font-family: 'Send Flowers', cursive;
+}
+
+
+.navbar{
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    width: 220px;
+    margin-top: 32px;
+    border-radius: 15px;
+    transition: 1.2s;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 7px 7px 7px grey;
+}
+
+.navbar h2{
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--nacol, white);
+    font-size: 30px;
+}
+
+.navbar:hover{
+    --nacol: black;
+    --acol: black;
+    --ncol: black;
+    background-color: white;
+    box-shadow: 7px 7px 7px rgba(228, 227, 227, 0.623);
+}
+
+.navbar .container-fluid a{
+    color: var(--ncol, black);
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item a{
+    color: var(--acol, black) ;
+}
+
+
+
+.colors #cid{
+    margin-top: 100px;
+    position: fixed;
+}
+
+.colors .head{
+    position: relative;
+    font-family: 'Send Flowers', cursive;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+}
+
+/* .contain{
+    margin-top: var(--marc, 50px);
+    display:grid;
+    height: fit-content;
+    width: fit-content;
+    background-color: aliceblue;
+    border-radius: 15px;
+    transition: 1.2s;
+}
+
+.contain:hover{
+    --marc: 42px;
+    color: white;
+    background-color: black;
+    box-shadow: 7px 7px 7px grey;
+} */
+
+.btn{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 170px;
+}
+
+.footer{
+    margin-top: 50px;
+    color: antiquewhite;
+    font-family:sans-serif;
+    font-size: 10px;
+}
