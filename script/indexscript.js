@@ -1,45 +1,17 @@
-const aspi = "https://picsum.photos/200/300";
+const aspi_mob = "https://picsum.photos/720/1080";
+const aspi_des = "https://picsum.photos/1920/720";
 
-// function downloadVID(name = "MyVid", api = aspi) {
-//   // https://picsum.photos/200/300
-//   const data = api;
-//   const blob = new Blob([data], { type: "image/jpeg" });
-//   const href = URL.createObjectURL(blob);
-//   const a = Object.assign(document.createElement("a"), {
-//     href,
-//     style: "display:none",
-//     download: name,
-//   });
 
-//   document.body.appendChild(a);
-//   a.click();
-//   URL.revokeObjectURL(href);
-//   a.remove();
-// }
-console.log("wo");
-function download(source = aspi) {
-  const fileName = source.split("/").pop();
-  var el = document.createElement("a");
-  el.setAttribute("href", source);
-  el.setAttribute("download", fileName);
-  document.body.appendChild(el);
-  const data = source;
-  const blob = new Blob([data], { type: "image/jpeg" });
-  const hre = URL.createObjectURL(blob);
-  const d = Object.assign(document.createElement("a"), {
-    hre,
-    style: "display:none",
-    download: "fileName",
-  });
-  document.body.appendChild(d);
-  d.click();
-  URL.revokeObjectURL(hre);
-  d.remove();
-  el.click();
-  el.remove();
+function mob(apis = aspi_mob) {
+  var a = document.createElement("a");
+  a.href = apis;
+  a.download = apis;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
 }
 
-function co(apis = aspi) {
+function web(apis = aspi_des) {
   var a = document.createElement("a");
   a.href = apis;
   a.download = apis;
