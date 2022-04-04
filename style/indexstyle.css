@@ -21,9 +21,9 @@
 }
 
 .navbar h2{
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--nacol, white);
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .navbar:hover{
@@ -76,13 +76,28 @@
 } */
 
 .btn{
-    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 5px;
+    font-family: 'Montserrat', sans-serif;;
     margin-top: 170px;
 }
 
 .footer{
-    margin-top: 50px;
-    color: antiquewhite;
-    font-family:sans-serif;
-    font-size: 10px;
+    margin-top: 45px;
+    color: rgb(250, 247, 243);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    transition: 1.2s;
+}
+
+.footer a{
+    color: aliceblue;
+}
+
+.footer a:hover{
+    color: bisque;
+}
+
+.footer:hover{
+    letter-spacing: 2px;
 }
